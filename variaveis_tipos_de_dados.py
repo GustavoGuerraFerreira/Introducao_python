@@ -11,7 +11,6 @@
 # -> bool (Boleano) True False
 
 # -> float ()
-#teste
 idade = 43
 idade = 50
 print(idade)
