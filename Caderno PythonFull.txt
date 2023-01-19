@@ -33,4 +33,26 @@ Entrada de dados:
 	input("conteudo-da-string") -> Além de pegar informação, passa uma string
 	nome = input("Digite seu nome: ") -> Atribuída a uma variável
 
+Conversão de dados:
+ - Transformar um tipo de dado para outro
+ - precisar haver uma lógica para conversão
+	int(variavel) -> transforma a variavel em valor inteiro
+	str(variavel) -> transforma a variavel em valor String
+	float(variavel) -> transforma a variavel em valor Flutuante
 
+Operadores aritméticos:
+ - Responsável por fazer operações matemáticas
+	5 + 2 = 7 -> adição 
+	5 - 2 = 3 -> subtração
+	5 * 2 = 10 -> multiplicação
+	5 / 2 = 2.5 -> divisão
+	5 % 2 = 1  -> resto
+	5 ** 2 = 25 -> potência 
+ - O python usa uma Biblioteca para calcular a raiz quadrada:
+	import math
+	math.sqrt(variavel) 
+ - Ordem de Precedência:
+	1º  ()
+	2º  **
+	3º  * / %
+	4º  + - 
