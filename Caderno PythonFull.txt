@@ -56,3 +56,20 @@ Operadores aritméticos:
 	2º  **
 	3º  * / %
 	4º  + - 
+
+Operadores relacionais:
+ - Faz uma Comparação/Relação entre dois valores
+ - Retorna True or False
+        5 > 2 ->  true  -> maior
+        7 < 4  -> false -> menor
+        8 >= 8 -> true  -> maior ou igual
+        9 <= 7 -> false -> menor ou igual
+        5 == 5 -> true  -> igual
+        4 != 4 -> false -> diferente 
+
+Operadores Lógicos:
+- Faz Comparação entre verdadeiros e falsos
+- Retorna True or False
+	True and True -> Ambos os lados devem ser True	
+	True or False -> Um dos lados deve ser True
+	not(5 > 2) -> Inverte a comparação True para false
