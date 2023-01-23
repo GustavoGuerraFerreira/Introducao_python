@@ -70,6 +70,13 @@ Operadores relacionais:
 Operadores Lógicos:
 - Faz Comparação entre verdadeiros e falsos
 - Retorna True or False
-	True and True -> Ambos os lados devem ser True	
-	True or False -> Um dos lados deve ser True
+	and ->True and True -> Ambos os lados devem ser True	
+	or ->True or False -> Um dos lados deve ser True
 	not(5 > 2) -> Inverte a comparação True para false
+Estrutura de Decisão:
+- Executa um determinado bloco de código, somente se uma condição
+for verdadeira
+- condição montada com operadores lógicos e relacionais
+	if condição: -> executa o bloco se a condição for verdadeira
+	elif condição -> executa o bloco se o if for falso e a condição verdadeira
+	else -> executa o bloco se o if e elif forem falsos
