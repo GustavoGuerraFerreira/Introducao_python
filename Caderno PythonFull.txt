@@ -80,3 +80,8 @@ for verdadeira
 	if condição: -> executa o bloco se a condição for verdadeira
 	elif condição -> executa o bloco se o if for falso e a condição verdadeira
 	else -> executa o bloco se o if e elif forem falsos
+Laço de repetição:
+- Executa um bloco de código várias vezes, até que a condição seja falsa
+	while condição: -> executa o código até a condição ser falsa
+		continue -> Volta para o inicio do código
+		break -> Encerra o código
