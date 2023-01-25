@@ -85,3 +85,7 @@ Laço de repetição:
 	while condição: -> executa o código até a condição ser falsa
 		continue -> Volta para o inicio do código
 		break -> Encerra o código
+		- usado quando não sabe quantas vezes o bloco de código será repirito
+	for i in range(0,5): executa o código no intervalo estabelecido
+		range(começa,termina,passo) -> função que cria um intervalo	 
+			- range(0,100,2) -> começa em 0, temina em 100 e anda de 2 em 2
