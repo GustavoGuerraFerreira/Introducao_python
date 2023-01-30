@@ -89,3 +89,30 @@ Laço de repetição:
 	for i in range(0,5): executa o código no intervalo estabelecido
 		range(começa,termina,passo) -> função que cria um intervalo	 
 			- range(0,100,2) -> começa em 0, temina em 100 e anda de 2 em 2
+Listas:
+- armazena várias informações
+- lista um conjunto de dados em uma única variável
+- Guiado por index começando por 0
+	nomes = ['Felipe', 'João', 'Matheus']  
+	print(nomes) -> Retorna ['João', 'Lucas', 'Matheus', 'Carlos']
+	print(nome[1]) -> Retorna Lucas
+	len() -> retorna a quantidade de elementos de uma lista
+-Alterando dados de uma lista:
+	nomes[index que deseja alterar] = "Gustavo"
+-Adicionar elemento na lista:
+	nomes.append('Estevão') -> adiciona um elemento no final da lista
+	-Adicionar um elemento em qualquer lugar da lista:
+		nomes.insert(index, "Lucas")
+
+-Remoção de elemento na lista:
+	-Remoção por index:
+		nomes.pop() -> remove o último elemento da lista
+		nomes.pop(index) -> remove o elemento que está no index
+	-Remoção por valor:
+		nomes.remove('Matheus') -> remove o elemento que tem o valor 'Matheus'
+-Buscar o index de um elemento de uma lista
+	nomes.index('Felipe') -> retorna o index do elemento com o valor 'Felipe'
+	
+
+
+
