@@ -112,6 +112,13 @@ Listas:
 		nomes.remove('Matheus') -> remove o elemento que tem o valor 'Matheus'
 -Buscar o index de um elemento de uma lista
 	nomes.index('Felipe') -> retorna o index do elemento com o valor 'Felipe'
+
+-Ordenação:
+	nomes.sort() -> Altera a lista original e coloca em ordem crescente alfabética/numeral
+	nomes.sort(reverse = true) -> Altera a lista original e coloca em ordem descrecente alfabética/numeral
+	sorted(nomes) -> Não altera a lista original e coloca em ordem crescente alfabética/numeral
+	sorted(nomes, reverse= true) -> Não altera a lista original e coloca em ordem descrecente alfabética/numeral
+
 	
 
 
