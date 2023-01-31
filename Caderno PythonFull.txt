@@ -120,14 +120,22 @@ Listas:
 	sorted(nomes) -> Não altera a lista original e coloca em ordem crescente alfabética/numeral
 	sorted(nomes, reverse= true) -> Não altera a lista original e coloca em ordem descrecente alfabética/numeral
 -Iteração(percorrer cada um dos elementos):
-	idade = [3,5,27,1,2,45,60,6,1.5]
+	idades = [3,5,27,1,2,45,60,6,1.5]
 	- Por index:
-		for i in range(0, len(idade)):
+		for i in range(0, len(idades)):
 			print(i) -> retorna o index
 			print(idades[i]) -> retorna o valor do elemento
 	- Por Elemento:
 		for i in idade:
 			print(i) -> retorna o valor do elemento
+	- Por index e Elemento:
+		enumerate() -> enumera os elemento da lista
+		x = list(enumerate(idades))
+		for i in enumerate(idades):
+			print(i) -> retorna uma tupla com o index e o elemento
+
+		for i,j in enumerate(idades):
+			print(f'i = {i} j = {j}') -> retorna o index e o elemento em variaveis diferentes
 	
 	
 	
