@@ -94,6 +94,7 @@ Listas:
 - lista um conjunto de dados em uma única variável
 - Guiado por index começando por 0
 	nomes = ['Felipe', 'João', 'Matheus']  
+	numeros = list(range(0,5)) -> cria uma lista de 1 até 4
 	print(nomes) -> Retorna ['João', 'Lucas', 'Matheus', 'Carlos']
 	print(nome[1]) -> Retorna Lucas
 	len() -> retorna a quantidade de elementos de uma lista
@@ -118,7 +119,19 @@ Listas:
 	nomes.sort(reverse = true) -> Altera a lista original e coloca em ordem descrecente alfabética/numeral
 	sorted(nomes) -> Não altera a lista original e coloca em ordem crescente alfabética/numeral
 	sorted(nomes, reverse= true) -> Não altera a lista original e coloca em ordem descrecente alfabética/numeral
-
+-Iteração(percorrer cada um dos elementos):
+	idade = [3,5,27,1,2,45,60,6,1.5]
+	- Por index:
+		for i in range(0, len(idade)):
+			print(i) -> retorna o index
+			print(idades[i]) -> retorna o valor do elemento
+	- Por Elemento:
+		for i in idade:
+			print(i) -> retorna o valor do elemento
+	
+	
+	
+	
 	
 
 
