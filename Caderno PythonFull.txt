@@ -136,8 +136,49 @@ Listas:
 
 		for i,j in enumerate(idades):
 			print(f'i = {i} j = {j}') -> retorna o index e o elemento em variaveis diferentes
+Dicionário
+- Armazena valores através de chave
+	x = {"chave": "valor"}
+	pessoa = { 'Nome': 'Gustavo', 'idade': 20, 'cep': 1414234124 }
+- adiconar uma chave e valor:
+	pessoa.update({'cep':'29100240', 'rua' : 'minha rua' })
+- buscar por chave:
+	pessoa.keys()
+- buscar por valor:
+	pessoa.values()
+- iterando:
+	traz uma tupla 
+	pessoa.items()
+
+Conjuntos
+	são lista que não repete os valores
+	x = {1,2,3,4,5}
+	y = {6,7,8,9,10}
+	set() -> transforma em conjuntos
+- União de conjuntos:
+	junta os conjuntos
+	x = x.union(y)
+- Intersecção:
+	traz os valores que aparecem nos dois conjuntos
+	x= x.intersection(y)
+- Diferença:
+	retira os valores iguais do conjuntos
+	x = x.difference(y)
+- Diferença de união
+	faz uma união sem os valores de intersecção
+	x= x.symmetric_difference(y)
+
+função
+	uma estrutura que pode receber ou não valor, processar uma informação
+	e executar uma determinada ação
+
+	def minha_funcao():	-> função que retorna "teste"
+		print("teste")
+
 	
-	
+
+
+
 	
 	
 	
