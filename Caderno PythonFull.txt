@@ -171,17 +171,111 @@ Conjuntos
 função
 	uma estrutura que pode receber ou não valor, processar uma informação
 	e executar uma determinada ação
-
+	
+- Sem Parâmetros:
 	def minha_funcao():	-> função que retorna "teste"
 		print("teste")
+- Com Parâmetros limitados:
+	é necessário passar valor no parâmetro da função
+	utiliza os parâmetros para determinada funcionalidade
+
+	def soma_numeros(n1, n2):
+	    print(n1 + n2)
+	
+	soma_numeros(5, 2)
+- Com Parâmetros ilimitados:
+
+	- *args
+		Parêmetro que permite entrada de vários argumentos
+		transforma os parâmetros em uma tupla
+		def soma_numeros(*args):
+  		  soma = 0
+   		  for i in args:
+        		soma = soma + i
+    		  print(soma)
+
+		soma_numeros(1,2,3,4,5,6,7,8,9)	
+	
+	- **kwargs:
+		Parêmetro que permite entrada de vários argumentos
+		Transforma os parâmetros em um dicionário
+		precisa dar nomes aos parâmetros
+
+		def soma_numeros2(**kwargs):
+     		    x =kwargs.get('teste3')
+     		    if x :
+          		 print('foi passado')
+     		    else:
+          		 print('Não foi passado')
+
+		soma_numeros2(teste1 = 1, teste2 = 2, teste3 = 3)
+
+- Retorno de valores da função:
+	faz a função retornar um valor e ser possivel manipula-lo
+	o código abaixo do return não será executado
+	def soma_valores(n1, n2):
+    	    soma = n1 + n2
+   	    return soma
+
+	x = soma_valores(1,2) + 1
+	print(x)
+	
+modularização
+	dividir o seu projetos em diversos arquivos, podendo assim
+	importar as funcionalidades desse arquivo
+
+	#import minha_lib  # Traz tudo para o arquivo principal
+	#from minha_lib import * # Traz tudo o que tem na biblioteca
+	#from minha_lib import x # Traz somente a variavel x da minha_lib
+	#from minha_lib import x as x_importado # Traz a variavel e muda o nome dela
+	#from minha_lib import soma_numero # Traz a função soma_numero
+	#from minhas_funcoes.minha_lib import soma_numero # Trazendo a função de outra pasta
 
 	
+Tratamento de exceção
+	Evita de mostrar para o usuário o erro no código
+	tenta fazer o código, caso não consiga entra em um exceção
+	n1 = int(input('Digite um número: '))
+	n2 = int(input('Digite um número: '))
 
+	try:
+    	   print(n1/n2)
+	except:
+           print('Não consegui')
+	finally:
+   	   print('Finalizado')
 
+- exceções com base em diferentes erros:
+	try:
+    		x = int(input('Digite um número: '))
+    		print(5/x)
+	except ValueError:
+    		print('Digite um número inteiro!')
+	except ZeroDivisionError:
+    		print('Não digite 0!')
 
-	
-	
-	
+- capturar a exceção que foi dada
+	try:
+    		x = int(input('Digite um número: '))
+    		print(5/x)
+	except Exception as e:
+   		 print(e)
+raise e assert
+	comandos específicos do python para levantamento de exceções
+	 - o comando raise vai obrigar que levante uma exceção no programa
+		raise ValueError("não deu bom")
+		def soma(n1, n2):
+    			if n1 < 0 or n2 < 0:
+           			 raise ValueError("n1 e n2 não podem ser negativos")
+   			return n1 + n2
+		print(soma(2,2))
+
+    print(soma(2,2))
+	 - o comando assert, força para algo ser verdade
+		x = 5
+		assert x > 0, "não deu bom"
+		print(x)
+
 
 
 
