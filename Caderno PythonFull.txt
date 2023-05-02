@@ -276,6 +276,30 @@ raise e assert
 		assert x > 0, "não deu bom"
 		print(x)
 
+função filter:
+	recebe uma função e uma lista e retorna o valor segundo a condição
+	filter(função, lista)
+	x = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+	x = list(filter(lambda x: x < 18, x))
+	
+função map:
+	recebe uma função e uma lista e retorna o valor segundo a condição
+	tem como objetivo mudar ou transformar um elemento de uma lista
+	map(função, lista)
+	x = [ i for i in range (12, 26)]
+	x = list(map(lambda x: 10 if x < 18 else(x),x))
 
-
-
+Arquivos:
+	para abrir/criar um arquivo:
+	arquivo = open('nome-do-arquivo.extensão', 'a, r ou w')
+		a - adicionar
+		r - ler
+		w - escrever
+	escrever alguma mensagem no arquivo:
+		arquivo.write('ola')
+	para ler o arquivo inteiro:
+		resultados = arquivo.read()
+		print(resultados)
+	abrir o arquivo em contexto:
+		with open('nome-do-arquivo.extensão', 'a, r ou w'):
+		assim o arquivo não precisa ser fechado
